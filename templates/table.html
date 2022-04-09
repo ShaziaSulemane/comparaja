@@ -1,0 +1,30 @@
+{% extends "form.html" %}
+
+{% block content %}
+  <table id="data" class="table table-striped">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Download Speed</th>
+        <th>Upload Speed</th>
+        <th>TV channels</th>
+        <th>Phone Count</th>
+        <th>Phone Data</th>
+        <th>Price</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for a, b, c, d, e, f, g, h, i in data %}
+        <tr>
+          <td>{{ a }}</td>
+          <td>{{ d }}</td>
+          <td>{{ e }}</td>
+          <td>{{ f }}</td>
+          <td>{{ g }}</td>
+          <td>{{ h }}</td>
+          <td>{{ i }}</td>
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+{% endblock %}

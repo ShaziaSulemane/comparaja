@@ -1,0 +1,24 @@
+{% extends "form.html" %}
+
+{% block content %}
+ <div class="row text-center h-100">
+  {% for a, b, c, d, e, f, g, h, i in data %}
+
+    <div class="col-sm-3 text-center my-auto" style="padding-bottom:30px">
+        <div class="card card-block d-flex" style="border: 1px solid #ebe7df;">
+            <div class="card-body align-items-center d-flex justify-content-center">
+                <h4 class="card-title">Product ID:   {{a}}</h4>
+                <p class="card-text">Download Speed: {{d}}</p>
+                <p class="card-text">Upload Speed:   {{e}}</p>
+                <p class="card-text">TV channels: {{f}}</p>
+                <p class="card-text">Phone count: {{g}}</p>
+                <p class="card-text">Phone Data: {{h}}</p>
+                <p class="card-text">Price: {{i}}</p>
+                <a href="#" class="btn btn-primary">See More</a>
+            </div>
+        </div>
+    </div>
+
+  {% endfor %}
+    </div>
+{% endblock %}
